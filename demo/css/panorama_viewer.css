@@ -10,12 +10,11 @@
 }
 
 .horizontal-panorama {
-  width: 100%;
+  width: 600px;
+  height: 400px;
   float: left;
   margin-top: -5px;
-  height: 400px;
   position: relative;
-  max-width: 600px;
 }
 
 .pv-container {
