@@ -9,9 +9,9 @@
      * Embed Panorama Photos on your website
      * with Panorama Viewer
      *
-     * original: https://github.com/philwilliammee/panorama_viewer
+     * original: https://github.com/peachananr/panorama_viewer
      * 
-     * fork: 
+     * fork: https://github.com/philwilliammee/panorama_viewer.git 
      *
      * ========================================================== */
 
@@ -108,7 +108,7 @@
             }
             var repeat = "no-repeat";
             if (settings.repeat == true) {
-              repeat = "repeat"
+              repeat = "repeat";
             }
     
             el.find(".pv-inner").css({

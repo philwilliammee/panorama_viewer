@@ -1,31 +1,37 @@
 <!doctype html>
 <html>
+
 <head>
-	<meta charset="utf-8">
-	<title>jQuery Panorama Viewer</title>
-	<!--link rel="canonical" href="http://www.thepetedesign.com/demos/panorama_viewer_demo.html" /-->
-  <!--script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script-->
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <meta charset="utf-8">
+  <title>jQuery Panorama Viewer</title>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
 
   <script type="text/javascript" src="./js/jquery.panorama_viewer.js"></script>
   <link href='./css/panorama_viewer.css' rel='stylesheet' type='text/css'>
-  <!--link href='demo.css' rel='stylesheet' type='text/css'-->
 </head>
+
 <body>
   <div class="wrapper">
-	  <div class="main">
+    <div class="main">
       <div class="horizontal-panorama">
-  	   <img src="./img/demo_photo.jpg">
-  	  </div><!-- end of .panorama -->
+        <img src="./img/demo_photo.jpg">
+      </div><!-- end of .panorama -->
+      <div class="horizontal-panorama" style='min-width: 800px !important'>
+        <img src="./img/demo_photo.jpg">
+      </div><!-- end of .panorama -->
+      <div class="horizontal-panorama" style='min-width: 100vw !important'>
+        <img src="./img/demo_photo.jpg">
+      </div><!-- end of .panorama -->
     </div>
   </div>
-  
+
   <script>
     $(document).ready(function () {
       'use strict'
       var target = $(".horizontal-panorama");
-      if ( target.length > 0) {
-        var hs = new Scroll( target );
+      if (target.length > 0) {
+        var hs = new Scroll(target);
         hs.panorama_viewer({
           repeat: true,
           overlay: true
@@ -34,6 +40,7 @@
         console.log('no horizontal scroll found');
       }
     });
-    </script>
+  </script>
 </body>
+
 </html>
